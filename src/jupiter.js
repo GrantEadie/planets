@@ -1,5 +1,6 @@
 export default class Jupiter {
-  constructor() {
-    
+  constructor(age) {
+    this.age = age;
+    this.years = 11.86;
   }
 }
