@@ -17,6 +17,6 @@ describe('Venus', () => {
   });
 
   test('expect function outputAge to return 60 * .62', () => {
-    expect(venus.outputAge()).toEqual(37.2);
+    expect(venus.outputAge()).toEqual(37);
   });
 });

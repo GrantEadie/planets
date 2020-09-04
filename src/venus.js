@@ -4,7 +4,7 @@ export default class Venus {
     this.years = .62;
   }
 
-  outputAge() {
-    return this.age * this.years;
+  outputAge () {
+    return Math.round(this.age * this.years);
   }
 }
