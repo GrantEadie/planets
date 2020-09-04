@@ -3,4 +3,8 @@ export default class Jupiter {
     this.age = age;
     this.years = 11.86;
   }
+
+  outputAge () {
+    return Math.round(this.age * this.years);
+  }
 }
