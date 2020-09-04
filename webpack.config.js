@@ -1,5 +1,6 @@
 const path = require('path');
-const HtmlwebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/main.js',
@@ -7,14 +8,14 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  devtool: 'eval-source-map',  
-  devServer: {                 
-    contentBase: './dist'      
+  devtool: 'eval-source-map',  // new line
+  devServer: {                 // new line
+    contentBase: './dist'      // new line
   },
   plugins: [
-    new CleanwebpackPlugin(),
-    new HtmlwebpackPlugin({
-      title: 'Shape Tracker',
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'planets',
       template: './src/index.html',
       inject: 'body'
     })
