@@ -1,5 +1,8 @@
 export default class Venus {
-  constructor() {
-    
+  constructor(age) {
+    this.age = age;
+    this.years = .62;
   }
+
+
 }

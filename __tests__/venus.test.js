@@ -5,10 +5,10 @@ describe('Venus', () => {
   let venus;
 
   beforeEach(() => {
-    venus = new Venus();
+    venus = new Venus(60);
   });
 
   test('check creation of venus object', () => {
-  expect(venus).toMatchObject(new Venus());
+  expect(venus).toMatchObject(new Venus(60));
   });
 });
