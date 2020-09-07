@@ -37,8 +37,32 @@ Spec: Create function to return inputted age multiplied by Mars' Earth years rou
   Input: "60"
   Output: "32"
 
+Spec: Create function to return inputted beets consumed per week as a factor of final age expectancy output. If less than 5, added 15 years, otherwise add 25 years.
+  Input: "4"
+  Output: "15"
 
+Spec: Create function to return inputted laughter per day as a factor of final age expectancy output. If less than 5, added 15 years, otherwise add 25 years.
+  Input: "7"
+  Output: "25"
 
+Spec: Create function to return inputted tweets posted per day as a factor of final age expectancy output. If more than 3, added 15 years, otherwise add 25 years.
+  Input: "2"
+  Output: "25"
+
+Spec: Create function to return inputted Star Sign as a factor of final age expectancy output. If fire or earth sign, added 15 years, other add 25 years.
+  Input: "Virgo"
+  Output: "17"
+
+Spec: Create function to return total age expectancy as added by the four previous functions. 
+  Input: "4 (beets per week), 7 (moments of laughter per day), 2 (tweets per day), Virgo"
+  Output: 87 years old
+
+Spec: Create function to return age subtracted from life expectancy to display amount of years left to live. If age is more than life expectancy, returns amount of years lived after expectancy.
+  Input: "95 (years old), 4 (beets per week), 7 (moments of laughter per day), 2 (tweets per day), Virgo"
+  Output: 8 years over the life limit
+
+  Input: "27 (years old), 4 (beets per week), 7 (moments of laughter per day), 2 (tweets per day), Virgo"
+  Ouput: 60 years left to live
 
 ## Known Bugs
 
@@ -79,10 +103,4 @@ SOFTWARE.
 Copyright (c) 2016 **_{GRANT EADIE}_**
 
 
-SPECS
-  Create functions to return inputted age multiplied by planet Earth years
-
-  Create Life Expectancy object class
-
-  Create Life Expectancy function based on beets consumed, humor, amount of tweets, and starSign. Return the expected life amount minus age lived. If the expected age is less than the age given, return a new age limit. 
-
+  
