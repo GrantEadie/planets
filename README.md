@@ -23,15 +23,19 @@ Spec: Create object classes in each planet js file and confirm export.
 
 Spec: Create function to return inputted age divided by Venus's Earth years rounded to the nearest whole number.
   Input: "60"
-  Output: 37
+  Output: "97"
 
 Spec: Create function to return inputted age divided by Mercury's Earth years rounded to the nearest whole number.
   Input: "60"
-  Output: "14"
+  Output: "250"
 
 Spec: Create function to return inputted age divided by Jupiter's Earth years rounded to the nearest whole number.
   Input: "60"
-  Output: "712"
+  Output: "5"
+
+Spec: Create function to return inputted age multiplied by Mars' Earth years rounded to the nearest whole number.
+  Input: "60"
+  Output: "32"
 
 
 
