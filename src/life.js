@@ -13,6 +13,10 @@ export default class LifeExpect {
   expectancyBeets() {
     if (this.beets < 5) {
       return this.life + 2;
+    } else {
+      return this.life + 10;
     }
-  }  
+  };  
+
+
 }

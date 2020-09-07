@@ -6,4 +6,4 @@ SPECS
 
   Create Life Expectancy object class
 
-  Create Life Expectancy function based on age, beets consumed, humor, amount of tweets, and starSign.
+  Create Life Expectancy function based on beets consumed, humor, amount of tweets, and starSign. Return the expected life amount minus age lived. If the expected age is less than the age given, return a new age limit. 

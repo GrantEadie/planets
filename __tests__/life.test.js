@@ -15,4 +15,6 @@ describe('LifeExpect', () => {
   test('check expectancy function is working', () => {
     expect(lifeExpect.expectancyBeets()).toEqual(67);
   });
+
+  
 });
