@@ -13,18 +13,18 @@ describe('LifeExpect', () => {
   });
 
   test('check expectancyBeets function is working', () => {
-    expect(lifeExpect.expectancyBeets()).toEqual(67);
+    expect(lifeExpect.expectancyBeets()).toEqual(20);
   });
 
   test('check expectancyLaugh function is working', () =>{
-    expect(lifeExpect.expectancyLaugh()).toEqual(75)
+    expect(lifeExpect.expectancyLaugh()).toEqual(25)
   });
 
   test('check expectancyTweet function is working', () => {
-    expect(lifeExpect.expectancyTweet()).toEqual(75)
+    expect(lifeExpect.expectancyTweet()).toEqual(25)
   }); 
 
   test('check expectancyStarSign function is working', () => {
-    expect(lifeExpect.expectancyStarSign()).toEqual(67)
+    expect(lifeExpect.expectancyStarSign()).toEqual(17)
   });
 });
