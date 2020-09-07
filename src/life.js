@@ -42,4 +42,12 @@ export default class LifeExpect {
     }
   };
 
+  timeLeft(totalLife) {
+    if (this.age > totalLife) {
+      return totalLife - this.age;
+    } else {
+      return this.age - totalLife;
+    }
+  }
+
 }
