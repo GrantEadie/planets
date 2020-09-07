@@ -27,4 +27,8 @@ describe('LifeExpect', () => {
   test('check expectancyStarSign function is working', () => {
     expect(lifeExpect.expectancyStarSign()).toEqual(17)
   });
+   
+  test('check that a combination of functions will effect the output age', () => {
+    expect(lifeExpect.expectancyBeets()+lifeExpect.expectancyLaugh()+lifeExpect.expectancyStarSign()+lifeExpect.expectancyTweet()).toEqual(87)
+  });
 });
