@@ -5,11 +5,11 @@ describe('LifeExpect', () => {
   let lifeExpect;
 
   beforeEach(() => {
-    lifeExpect = new LifeExpect(24, 4, 7, 2, "Virgo");
+    lifeExpect = new LifeExpect(95, 4, 7, 2, "Virgo");
   });
 
   test('check creation of LifeExpect object', () => {
-  expect(lifeExpect).toMatchObject(new LifeExpect(24, 4, 7, 2, "Virgo"));
+  expect(lifeExpect).toMatchObject(new LifeExpect(95, 4, 7, 2, "Virgo"));
   });
 
   test('check expectancyBeets function is working', () => {
@@ -31,4 +31,8 @@ describe('LifeExpect', () => {
   test('check that a combination of functions will effect the output age', () => {
     expect(lifeExpect.expectancyBeets()+lifeExpect.expectancyLaugh()+lifeExpect.expectancyStarSign()+lifeExpect.expectancyTweet()).toEqual(87)
   });
+
+  test('check that timeLeft function will return correct outputs', () => {
+    expect(lifeExpect.timeLeft(lifeExpect.expectancyBeets()+lifeExpect.expectancyLaugh()+lifeExpect.expectancyStarSign()+lifeExpect.expectancyTweet())).toEqual(8)
+  })
 });
