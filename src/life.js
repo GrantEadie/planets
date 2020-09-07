@@ -32,5 +32,13 @@ export default class LifeExpect {
     } else {
       return this.life + 10;
     }
-  }
+  };
+
+  expectancyStarSign() {
+    if (this.starSign === "Virgo" || this.starSign === "Taurus" || this.starSign === "Capricorn" || this.starSign === "Aries" || this.starSign === "Leo" || starSign === "Sagittarius") {
+      return this.life + 2;
+    } else {
+      return this.life + 10;
+    }
+  };
 }

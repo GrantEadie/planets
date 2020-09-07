@@ -22,5 +22,9 @@ describe('LifeExpect', () => {
 
   test('check expectancyTweet function is working', () => {
     expect(lifeExpect.expectancyTweet()).toEqual(75)
-  })
+  }); 
+
+  test('check expectancyStarSign function is working', () => {
+    expect(lifeExpect.expectancyStarSign()).toEqual(67)
+  });
 });
