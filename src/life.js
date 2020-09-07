@@ -18,5 +18,19 @@ export default class LifeExpect {
     }
   };  
 
+  expectancyLaugh() {
+    if (this.laugh < 5) {
+      return this.life + 2;
+    } else {
+      return this.life + 10;
+    }
+  };
 
+  expectancyTweet() {
+    if (this.tweet > 3) {
+      return this.life + 2;
+    } else {
+      return this.life + 10;
+    }
+  }
 }
