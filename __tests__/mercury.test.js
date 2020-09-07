@@ -16,7 +16,7 @@ describe('Mercury', () => {
     expect(mercury.age).toEqual(60);
   });
 
-  test('expect function outputAge to return 60 * .24', () => {
-    expect(mercury.outputAge()).toEqual(14);
+  test('expect function outputAge to return 60 / .24', () => {
+    expect(mercury.outputAge()).toEqual(250);
   });
 });

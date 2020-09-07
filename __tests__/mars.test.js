@@ -16,7 +16,7 @@ describe('Mars', () => {
     expect(mars.age).toEqual(60);
   });
 
-  test('expect function outputAge to return 60 * 1.88', () => {
-    expect(mars.outputAge()).toEqual(113);
+  test('expect function outputAge to return 60 / 1.88', () => {
+    expect(mars.outputAge()).toEqual(32);
   });
 });

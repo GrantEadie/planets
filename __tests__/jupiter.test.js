@@ -16,7 +16,7 @@ describe('Jupiter', () => {
     expect(jupiter.age).toEqual(60);
   });
 
-  test('expect function outputAge to return 60 * 11.86', () => {
-    expect(jupiter.outputAge()).toEqual(712);
+  test('expect function outputAge to return 60 / 11.86', () => {
+    expect(jupiter.outputAge()).toEqual(5);
   });
 });

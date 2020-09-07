@@ -5,6 +5,6 @@ export default class Mars {
   }
 
   outputAge () {
-    return Math.round(this.age * this.years);
+    return Math.round(this.age / this.years);
   }
 }

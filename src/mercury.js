@@ -5,6 +5,6 @@ export default class Mercury {
   }
 
   outputAge () {
-    return Math.round(this.age * this.years);
+    return Math.round(this.age / this.years);
   }
 }
