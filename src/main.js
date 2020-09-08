@@ -8,14 +8,21 @@ import Jupiter from './jupiter.js';
 import Venus from './venus.js';
 
 $(document).ready(function() {
+  event.preventDefault();
   let jupiter = new Jupiter();
   let mars = new Mars();
   let mercury = new Mercury();
   let venus = new Venus();
 
   $("planet-age-form").submit(function() {
+
     let inputtedAge = $("#age").val();
+    let inputtedPlanet = $("#planet").val();
+    console.log(inputtedPlanet);
+    console.log(inputtedAge);
 
+    if (inputtedPlanet === "Jupiter") {
+      $("#output").text(jupiter.outputAge(inputtedAge));
+    }
   });
-
 });

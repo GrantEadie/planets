@@ -5,18 +5,14 @@ describe('Jupiter', () => {
   let jupiter;
 
   beforeEach(() => {
-    jupiter = new Jupiter(60);
+    jupiter = new Jupiter();
   });
 
   test('check creation of venus object', () => {
-  expect(jupiter).toMatchObject(new Jupiter(60));
-  });
-
-  test('check that values are entering Jupiter class', () => {
-    expect(jupiter.age).toEqual(60);
+  expect(jupiter).toMatchObject(new Jupiter());
   });
 
   test('expect function outputAge to return 60 / 11.86', () => {
-    expect(jupiter.outputAge()).toEqual(5);
+    expect(jupiter.outputAge(60)).toEqual(5);
   });
 });

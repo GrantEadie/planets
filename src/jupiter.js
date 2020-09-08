@@ -1,10 +1,9 @@
 export default class Jupiter {
-  constructor(age) {
-    this.age = age;
+  constructor() {
     this.years = 11.86;
   }
 
-  outputAge () {
-    return Math.round(this.age / this.years);
+  outputAge (age) {
+    return Math.round(age / this.years);
   }
 }
