@@ -15,7 +15,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'planets',
+      title: 'Planets',
       template: './src/index.html',
       inject: 'body'
     })
