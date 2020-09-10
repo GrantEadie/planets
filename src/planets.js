@@ -11,6 +11,12 @@ export default class Planets {
   outputAge () {
     if (this.selectPlanet === "Venus") {
       return Math.round(this.age / this.yearsVenus);
-    } 
+    } else if (this.selectPlanet === "Jupiter") {
+      return Math.round(this.age / this.yearsJupiter);
+    } else if (this.selectPlanet === "Mercury") {
+      return Math.round(this.age / this.yearsMercury);
+    } else if (this.selectPlanet === "Mars") {
+      return Math.round(this.age / this.yearsMars);
+    }
   }
 }
