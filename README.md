@@ -2,7 +2,7 @@
 
 # _Galactic Age Calculator_
 
-#### _Prompts user to input data and outputs age on other planets and aged to be lived. Created on 9/5/20, updated on 9/7/20_
+#### _Prompts user to input data and outputs age on other planets and aged to be lived. Created on 9/5/20, updated on 9/10/20_
 
 #### By _**Grant Eadie**_
 
@@ -14,10 +14,13 @@ _This application will prompt the user to input their age, amount of beets consu
 
 * _Download main folder_
 * _Be sure to have all folders and images_
-* _Open index.html in your chosen browser_
+* _terminal: $ npm install_
+* _terminal: $ npm run start_
 * _Fill out survey and click Submit_
 
 ## Specs
+
+How to test: In planets.test.js, input any number where "60" is currently located. Check that the number is also changed in the first test instance to your inputted number. On your own, calculate how your number will be effected from each test using the test descriptions (ie. for Venus it would be 60 / .62 = 97).
 
 Spec: Create object classes in each planet js file and confirm export.
 
@@ -66,7 +69,7 @@ Spec: Create function to return age subtracted from life expectancy to display a
 
 ## Known Bugs
 
-_No known bugs._
+_No known bugs. UI is fully functioning._
 
 ## Support and contact details
 
@@ -74,7 +77,7 @@ _Please constact Grant Eadie at grantleadie@gmail.com for any questions._
 
 ## Technologies Used
 
-_Created in Visual Studio Code using HTML, CSS, and Javascript. Libraries include jQuery and Bootstrap._
+_Created in Visual Studio Code using HTML, CSS, and Javascript. Libraries include jQuery and Bootstrap. Plugins include webpack, Jest, ESLint, and Babel._
 
 ### License
 

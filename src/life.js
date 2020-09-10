@@ -16,7 +16,7 @@ export default class LifeExpect {
     } else {
       return this.life + 25;
     }
-  };  
+  }
 
   expectancyLaugh() {
     if (this.laugh < 5) {
@@ -24,7 +24,7 @@ export default class LifeExpect {
     } else {
       return this.life + 25;
     }
-  };
+  }
 
   expectancyTweet() {
     if (this.tweet > 3) {
@@ -32,15 +32,15 @@ export default class LifeExpect {
     } else {
       return this.life + 25;
     }
-  };
+  }
 
   expectancyStarSign() {
-    if (this.starSign === "Virgo" || this.starSign === "Taurus" || this.starSign === "Capricorn" || this.starSign === "Aries" || this.starSign === "Leo" || starSign === "Sagittarius") {
+    if (this.starSign === "Virgo" || this.starSign === "Taurus" || this.starSign === "Capricorn" || this.starSign === "Aries" || this.starSign === "Leo" || this.starSign === "Sagittarius") {
       return this.life + 17;
     } else {
       return this.life + 25;
     }
-  };
+  }
 
   timeLeft(totalLife) {
     if (this.age > totalLife) {
