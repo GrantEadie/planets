@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
   <title>Planet Age</title>
 </head>
 <body>
   <div class="container">
-    <h3 class="jumbotron">What's your age on other planets?</h3>
+    <h3 class="jumbotron">What's your age on other planets? <br><span style="font-size:medium">And when are you going to die?</span></h3>
     <form id="planet-age-form">
-      <label for="age">Enter age:</label>
+      <label for="age" class="margin">Enter age:</label>
       <input id="age" type="number">
-      <div class="form-group align">
+      <div class="form-group align margin">
+        
         <label>Select a planet.</label>
         <select class="form-control" id="planet">
-          <option value="mercury">Mercury</option>
-          <option value="venus">Venus</option>
-          <option value="mars">Mars</option>
-          <option value="jupiter">Jupiter</option>
+          <option value="Mercury">Mercury</option>
+          <option value="Venus">Venus</option>
+          <option value="Mars">Mars</option>
+          <option value="Jupiter">Jupiter</option>
         </select>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <p id="output"></p>
+    <br>
+    <h2 id="output"></h2>
   </div>
 </body>
 </html>

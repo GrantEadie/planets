@@ -2,26 +2,18 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Mars from './mars.js';
-import Mercury from './mercury.js';
-import Jupiter from './jupiter.js';
-import Venus from './venus.js';
+import Planets from './planets.js';
 
 $(document).ready(function() {
-  let jupiter = new Jupiter();
-  let mars = new Mars();
-  let mercury = new Mercury();
-  let venus = new Venus();
 
-  $("planet-age-form").submit(function(event) {
+  $("#planet-age-form").submit(function(event) {
     event.preventDefault();
     let inputtedAge = $("#age").val();
     let inputtedPlanet = $("#planet").val();
+    let planet = new Planets(inputtedAge, inputtedPlanet);
     console.log(inputtedPlanet);
     console.log(inputtedAge);
 
-    if (inputtedPlanet === "Jupiter") {
-      $("#output").text(jupiter.outputAge(inputtedAge));
-    }
+    $("#output").text("You would be " + planet.outputAge() + " years old on " + inputtedPlanet + "!");
   });
 });

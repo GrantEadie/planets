@@ -1,0 +1,13 @@
+BODY {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron {
+  background: white;
+  text-align: center;
+}
+
+.margin {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
